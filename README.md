@@ -3,11 +3,11 @@ POC for Hadoop Map Reduce (Find average salary for a department from a employee 
 
 Description : This a Hadoop map reduce maven project with following
 
-  Driver class to configure haddop parameters.
+    Driver class to configure haddop parameters.
   
-  Mapper class
+    Mapper class
   
-  Reducer Class
+    Reducer Class
 
 Steps to build and run this project in hadoop cluster 
 
@@ -18,9 +18,10 @@ Steps to build and run this project in hadoop cluster
 3. Copy the data file to Hadoop local disc (Using WinSCP)
 
 4. Copy the data file from local disc to HDFS using below commands
-
-      $ hadoop fs -mkdir input/employee
-      $ hadoop fs -copyFromLocal employee_dataset_chicago input/employee
+  
+        $ hadoop fs -mkdir input/employee
+      
+        $ hadoop fs -copyFromLocal employee_dataset_chicago input/employee
       
  5. Remove old output folder using command
  		
@@ -28,7 +29,7 @@ Steps to build and run this project in hadoop cluster
  		
  6. Run the project using below command
  
-      $ hadoop jar AverageByDept.jar com.avgbydept.App input/employee/employee_dataset_chicago output
+        $ hadoop jar AverageByDept.jar com.avgbydept.App input/employee/employee_dataset_chicago output
       
  7. Check the output using command
  
